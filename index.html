@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,18 +8,42 @@
   <script src="https://kwesforms.com/v2/kwes-script.js" defer></script>
   <title>UXD poll</title>
 </head>
-<body>
-  <form class="kwes-form" action="https://kwesforms.com/api/foreign/forms/7ttN5PaUPDx9hYeiMI7a">
-      <label>
-    Your email:
-    <input type="email" name="_replyto">
-  </label>
-  <label>
-    Your message:
-    <textarea name="message"></textarea>
-  </label>
-  <!-- your other form fields go here -->
-  <button type="submit">Send</button>
-</form>
+
+<body class="body">
+  <div class="wrapper">
+    <div class="heading">
+      <img src="./images/thuas.png" alt="THUAS logo" width="50%">
+      <h3>Welcome to the poll website for the UXD yearbook elections.</h3>
+      <p>Please contact Daphne (19088337@student.hhs.nl) if you want to remove your name from appearing on any election results.</p>
+    </div>
+
+
+    <form class="kwes-form" action="https://kwesforms.com/api/foreign/forms/7ttN5PaUPDx9hYeiMI7a">
+
+      <div class="question"><label>
+          What is your name?
+          <input type="name" name="name">
+        </label>
+        <p>* All votes are anonymous, we only requestion your name to make sure nobody votes twice or on themselves.</p></div>
+
+      <div class="question"><label>
+          Your message:
+          <textarea name="message"></textarea>
+        </label>
+        <select id="cars" name="cars">
+          <option value="volvo">Volvo</option>
+          <option value="saab">Saab</option>
+          <option value="fiat">Fiat</option>
+          <option value="audi">Audi</option>
+        </select>
+      </div>
+
+      <div class="question">
+        <button type="submit">Submit</button>
+      </div>
+
+    </form>
+  </div>
 </body>
+
 </html>
